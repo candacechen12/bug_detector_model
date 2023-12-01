@@ -35,7 +35,7 @@ from tqdm import tqdm
 from transformers import (AdamW, get_linear_schedule_with_warmup,
                           RobertaConfig, RobertaTokenizer, RobertaModel)
 
-from CodeBertModel.py import CodeBertModel
+from models.code_representation.codebert.CodeBertModel import CodeBertModel
 from models.evaluation.evaluation import evaluate_result, evaluatelog_result
 
 logger = logging.getLogger(__name__)
